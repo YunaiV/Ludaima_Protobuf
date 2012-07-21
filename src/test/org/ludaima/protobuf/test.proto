@@ -1,0 +1,28 @@
+
+option package = "org.hgame.message4";
+
+message Test {
+	required byte byteT = 1;
+	required char charT = 2;
+	required short shortT = 3;
+	required int intT = 4;
+	required long longT = 5;
+	required float floatT = 6;
+	required double doubleT = 7;
+	repeated byte byteTs = 8;
+	repeated char charTs = 9;
+	repeated short shortTs = 10;
+	repeated int intTs = 11;
+	repeated long longTs = 12;
+	repeated float floatTs = 13;
+	repeated double doubleTs = 14;
+	required string stringT = 15;
+	repeated string stringTs = 16;
+	required XY xy = 17;
+	repeated XY xys = 18;
+}
+
+message XY {
+	required int y = 2;
+	required int x = 1;
+}
